@@ -27,7 +27,7 @@ public class GameProcess {
             }
             //Game process
             if (tempNumber!=-1) {
-                if (tempNumber < statisticMonitor.getStartRange() || tempNumber > statisticMonitor.getEndRange()) {
+                if (tempNumber <= statisticMonitor.getStartRange() || tempNumber >= statisticMonitor.getEndRange()) {
                     statisticMonitor.viewStatistics(0);
                     statisticMonitor.setOutOfRange(1);
                     continue;
